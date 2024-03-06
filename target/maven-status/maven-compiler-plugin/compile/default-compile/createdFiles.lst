@@ -1,4 +1,5 @@
 com\jcaido\demorender\controllers\UserController.class
 com\jcaido\demorender\repositories\UserRepository.class
+com\jcaido\demorender\config\OpenApiConfig.class
 com\jcaido\demorender\models\User.class
 com\jcaido\demorender\DemoRenderApplication.class
