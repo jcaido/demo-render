@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Repository
-public interface ProietarioRepository extends JpaRepository<Propietario, Long> {
+public interface PropietarioRepository extends JpaRepository<Propietario, Long> {
 
     @Transactional(readOnly = true)
     Optional<Propietario> findByDni(String dni);
