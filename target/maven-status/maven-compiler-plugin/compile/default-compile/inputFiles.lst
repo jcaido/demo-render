@@ -3,6 +3,7 @@ C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\dem
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\config\OpenApiConfig.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\repositories\UserRepository.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\DTOs\codigoPostal\CodigoPostalCrearDTO.java
+C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\models\Propietario.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\DTOs\codigoPostal\CodigoPostalDTO.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\controllers\CodigoPostalController.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\exceptions\BadRequestModificacionException.java
