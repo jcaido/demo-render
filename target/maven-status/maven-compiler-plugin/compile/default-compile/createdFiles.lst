@@ -34,5 +34,7 @@ com\jcaido\demorender\DTOs\propietario\PropietarioDTO.class
 com\jcaido\demorender\models\CodigoPostal$CodigoPostalBuilder.class
 com\jcaido\demorender\services\propietario\PropietarioService.class
 com\jcaido\demorender\controllers\PropietarioController.class
+com\jcaido\demorender\models\Proveedor.class
+com\jcaido\demorender\models\Proveedor$ProveedorBuilder.class
 com\jcaido\demorender\services\propietario\PropietarioServiceImpl.class
 com\jcaido\demorender\services\codigoPostal\CodigoPostalModificacionCambiosService.class
