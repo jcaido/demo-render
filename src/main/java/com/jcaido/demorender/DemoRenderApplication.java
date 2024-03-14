@@ -2,6 +2,7 @@ package com.jcaido.demorender;
 
 import com.jcaido.demorender.DTOs.codigoPostal.CodigoPostalDTO;
 import com.jcaido.demorender.DTOs.propietario.PropietarioDTO;
+import com.jcaido.demorender.DTOs.proveedor.ProveedorDTO;
 import org.modelmapper.ModelMapper;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -18,10 +19,13 @@ public class DemoRenderApplication {
 	public CodigoPostalDTO codigoPostalDTO() {
 		return new CodigoPostalDTO();
 	}
-
 	@Bean
 	public PropietarioDTO propietarioDTO() {
 		return new PropietarioDTO();
+	}
+	@Bean
+	public ProveedorDTO proveedorDTO() {
+		return new ProveedorDTO();
 	}
 
 	public static void main(String[] args) {SpringApplication.run(DemoRenderApplication.class, args);}
