@@ -192,7 +192,7 @@ public class PropietarioController {
     public List<PropietarioBusquedasDTO> obtenerPropietariosPorCodigoPostal(@Parameter(description = "id del codigo postal",
             required = true) @PathVariable Long id) {
 
-        return propietarioService.ObtenerPropietariosPorCodigoPostal(id);
+        return propietarioService.obtenerPropietariosPorCodigoPostalSQL(id);
 
     }
 

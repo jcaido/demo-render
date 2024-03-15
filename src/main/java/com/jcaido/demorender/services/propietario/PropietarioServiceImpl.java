@@ -137,14 +137,13 @@ public class PropietarioServiceImpl implements PropietarioService {
 
     @Override
     public List<PropietarioBusquedasParcialDTO> obtenerPropietariosPorCodigoPostalParcial(Long id) {
-        Optional<CodigoPostal> codigo = codigoPostalRepository.findById(id);
 
-        if (!codigo.isPresent())
-            throw new ResourceNotFoundException("Codigo Postal", "id", String.valueOf(id));
+        Query query = entityManager.createNativeQuery(
+                "SELECT * FROM propietarios WHERE codigo_postal_id = :id", Propietario.class);
+        query.setParameter("id", id);
+        List<Propietario> propietarios = query.getResultList();
 
-        List<Propietario> propietarios = codigo.get().getPropietarios();
-
-        return propietarios.stream().map(propietario -> modelMapper.map(propietario, PropietarioBusquedasParcialDTO.class)).toList();
+        return propietarios.stream().map(propietario-> modelMapper.map(propietario, PropietarioBusquedasParcialDTO.class)).toList();
     }
 
     @Override
