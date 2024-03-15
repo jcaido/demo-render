@@ -6,6 +6,7 @@ com\jcaido\demorender\repositories\UserRepository.class
 com\jcaido\demorender\repositories\PropietarioRepository.class
 com\jcaido\demorender\exceptions\BadRequestCreacionException.class
 com\jcaido\demorender\DTOs\proveedor\ProveedorBusquedasParcialDTO.class
+com\jcaido\demorender\models\Vehiculo.class
 com\jcaido\demorender\DTOs\proveedor\ProveedorBusquedasDTO.class
 com\jcaido\demorender\DTOs\propietario\PropietarioCrearDTO$PropietarioCrearDTOBuilder.class
 com\jcaido\demorender\DTOs\proveedor\ProveedorCrearDTO.class
@@ -33,6 +34,7 @@ com\jcaido\demorender\exceptions\ErrorDetails.class
 com\jcaido\demorender\services\codigoPostal\CodigoPostalServiceImpl.class
 com\jcaido\demorender\services\codigoPostal\CodigoPostalValidacionesUniqueService.class
 com\jcaido\demorender\exceptions\GlobalExceptionHandler.class
+com\jcaido\demorender\models\Vehiculo$VehiculoBuilder.class
 com\jcaido\demorender\DemoRenderApplication.class
 com\jcaido\demorender\services\codigoPostal\CodigoPostalService.class
 com\jcaido\demorender\DTOs\codigoPostal\CodigoPostalCrearDTO$CodigoPostalCrearDTOBuilder.class
