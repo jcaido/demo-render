@@ -8,7 +8,7 @@ import lombok.*;
 @Getter
 @Setter
 @Builder
-public class VehiculoBuquedasDTO {
+public class VehiculoBusquedasDTO {
 
     private Long id;
     private String matricula;
