@@ -3,6 +3,7 @@ package com.jcaido.demorender;
 import com.jcaido.demorender.DTOs.codigoPostal.CodigoPostalDTO;
 import com.jcaido.demorender.DTOs.propietario.PropietarioDTO;
 import com.jcaido.demorender.DTOs.proveedor.ProveedorDTO;
+import com.jcaido.demorender.DTOs.vehiculo.VehiculoDTO;
 import org.modelmapper.ModelMapper;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -26,6 +27,10 @@ public class DemoRenderApplication {
 	@Bean
 	public ProveedorDTO proveedorDTO() {
 		return new ProveedorDTO();
+	}
+	@Bean
+	public VehiculoDTO vehiculoDTO() {
+		return new VehiculoDTO();
 	}
 
 	public static void main(String[] args) {SpringApplication.run(DemoRenderApplication.class, args);}
