@@ -2,6 +2,7 @@ com\jcaido\demorender\DTOs\propietario\PropietarioDTO$PropietarioDTOBuilder.clas
 com\jcaido\demorender\services\vehiculo\VehiculoServiceImpl.class
 com\jcaido\demorender\models\CodigoPostal.class
 com\jcaido\demorender\services\propietario\PropietarioModificacionCambiosService.class
+com\jcaido\demorender\models\Pieza.class
 com\jcaido\demorender\services\propietario\PropietarioValidacionesUniqueService.class
 com\jcaido\demorender\repositories\UserRepository.class
 com\jcaido\demorender\repositories\PropietarioRepository.class
@@ -45,6 +46,7 @@ com\jcaido\demorender\exceptions\GlobalExceptionHandler.class
 com\jcaido\demorender\DTOs\vehiculo\VehiculoDTO.class
 com\jcaido\demorender\models\Vehiculo$VehiculoBuilder.class
 com\jcaido\demorender\DemoRenderApplication.class
+com\jcaido\demorender\models\Pieza$PiezaBuilder.class
 com\jcaido\demorender\services\codigoPostal\CodigoPostalService.class
 com\jcaido\demorender\services\vehiculo\VehiculoModificacionCambiosService.class
 com\jcaido\demorender\DTOs\codigoPostal\CodigoPostalCrearDTO$CodigoPostalCrearDTOBuilder.class
