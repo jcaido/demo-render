@@ -3,6 +3,7 @@ com\jcaido\demorender\services\vehiculo\VehiculoServiceImpl.class
 com\jcaido\demorender\DTOs\pieza\PiezaCrearDTO.class
 com\jcaido\demorender\models\CodigoPostal.class
 com\jcaido\demorender\services\pieza\PiezaModificacionCambiosService.class
+com\jcaido\demorender\repositories\ManoDeObraRepository.class
 com\jcaido\demorender\services\propietario\PropietarioModificacionCambiosService.class
 com\jcaido\demorender\models\Pieza.class
 com\jcaido\demorender\services\propietario\PropietarioValidacionesUniqueService.class
@@ -15,6 +16,7 @@ com\jcaido\demorender\services\vehiculo\VehiculoService.class
 com\jcaido\demorender\models\Vehiculo.class
 com\jcaido\demorender\DTOs\proveedor\ProveedorBusquedasDTO.class
 com\jcaido\demorender\repositories\VehiculoRepository.class
+com\jcaido\demorender\DTOs\manoDeObra\ManoDeObraDTO.class
 com\jcaido\demorender\DTOs\propietario\PropietarioCrearDTO$PropietarioCrearDTOBuilder.class
 com\jcaido\demorender\DTOs\proveedor\ProveedorCrearDTO.class
 com\jcaido\demorender\exceptions\ResourceNotFoundException.class
@@ -35,6 +37,7 @@ com\jcaido\demorender\repositories\CodigoPostalRepository.class
 com\jcaido\demorender\DTOs\propietario\PropietarioBusquedasDTO$PropietarioBusquedasDTOBuilder.class
 com\jcaido\demorender\services\proveedor\ProveedorValidacionesUniqueService.class
 com\jcaido\demorender\DTOs\vehiculo\VehiculoBusquedasParcialDTO.class
+com\jcaido\demorender\services\manoDeObra\ManoDeObraService.class
 com\jcaido\demorender\models\CodigoPostal$CodigoPostalBuilder.class
 com\jcaido\demorender\services\propietario\PropietarioService.class
 com\jcaido\demorender\models\Proveedor.class
@@ -50,6 +53,8 @@ com\jcaido\demorender\services\codigoPostal\CodigoPostalValidacionesUniqueServic
 com\jcaido\demorender\DTOs\vehiculo\VehiculoBusquedasDTO$VehiculoBusquedasDTOBuilder.class
 com\jcaido\demorender\exceptions\GlobalExceptionHandler.class
 com\jcaido\demorender\DTOs\vehiculo\VehiculoDTO.class
+com\jcaido\demorender\services\manoDeObra\ManoDeObraServiceImpl.class
+com\jcaido\demorender\DTOs\manoDeObra\ManoDeObraCrearDTO.class
 com\jcaido\demorender\models\Vehiculo$VehiculoBuilder.class
 com\jcaido\demorender\DemoRenderApplication.class
 com\jcaido\demorender\models\Pieza$PiezaBuilder.class
@@ -65,6 +70,7 @@ com\jcaido\demorender\DTOs\vehiculo\VehiculoCrearDTO.class
 com\jcaido\demorender\repositories\PiezaRepository.class
 com\jcaido\demorender\services\proveedor\ProveedorServiceImpl.class
 com\jcaido\demorender\models\ManoDeObra.class
+com\jcaido\demorender\controllers\ManoDeObraController.class
 com\jcaido\demorender\controllers\PiezaController.class
 com\jcaido\demorender\DTOs\propietario\PropietarioDTO.class
 com\jcaido\demorender\controllers\PropietarioController.class

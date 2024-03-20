@@ -1,8 +1,10 @@
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\controllers\PropietarioController.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\services\propietario\PropietarioValidacionesUniqueService.java
+C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\repositories\ManoDeObraRepository.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\repositories\UserRepository.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\services\propietario\PropietarioService.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\DTOs\codigoPostal\CodigoPostalDTO.java
+C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\DTOs\manoDeObra\ManoDeObraDTO.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\exceptions\ResourceNotFoundException.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\services\pieza\PiezaModificacionCambiosService.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\models\CodigoPostal.java
@@ -25,6 +27,7 @@ C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\dem
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\services\vehiculo\VehiculoValidacionesUniqueService.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\controllers\PiezaController.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\models\Vehiculo.java
+C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\services\manoDeObra\ManoDeObraServiceImpl.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\services\proveedor\ProveedorValidacionesUniqueService.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\services\propietario\PropietarioModificacionCambiosService.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\repositories\PiezaRepository.java
@@ -37,6 +40,7 @@ C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\dem
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\DTOs\propietario\PropietarioDTO.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\DTOs\vehiculo\VehiculoBusquedasParcialDTO.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\repositories\VehiculoRepository.java
+C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\services\manoDeObra\ManoDeObraService.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\services\proveedor\ProveedorServiceImpl.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\controllers\UserController.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\DTOs\vehiculo\VehiculoDTO.java
@@ -50,8 +54,10 @@ C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\dem
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\DTOs\proveedor\ProveedorCrearDTO.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\services\propietario\PropietarioServiceImpl.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\services\proveedor\ProveedorModificacionCambiosService.java
+C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\controllers\ManoDeObraController.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\exceptions\BadRequestModificacionException.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\services\codigoPostal\CodigoPostalModificacionCambiosService.java
+C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\DTOs\manoDeObra\ManoDeObraCrearDTO.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\services\vehiculo\VehiculoServiceImpl.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\models\User.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\services\vehiculo\VehiculoModificacionCambiosService.java
