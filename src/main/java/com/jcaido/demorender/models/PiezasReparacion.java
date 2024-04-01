@@ -20,4 +20,6 @@ public class PiezasReparacion implements Serializable {
     @OneToOne()
     private Pieza pieza;
     private Integer cantidad;
+    @OneToOne()
+    private OrdenReparacion ordenReparacion;
 }
