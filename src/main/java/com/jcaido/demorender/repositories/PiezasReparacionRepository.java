@@ -14,16 +14,16 @@ import java.util.List;
 @Repository
 public interface PiezasReparacionRepository extends JpaRepository<PiezasReparacion, Long> {
 
-    //@Query("SELECT new com.Tallerdecoches.DTOs.almacen.MovimientoAlmacenDTO(" +
-    //        " p.pieza.referencia, p.pieza.nombre, SUM(p.cantidad))" +
-    //        " FROM PiezasReparacion AS p" +
-    //        " WHERE p.ordenReparacion.fechaCierre <= :fecha" +
-    //        " GROUP BY p.pieza.referencia, p.pieza.nombre")
-    //List<MovimientoAlmacenDTO> obtenerTotalPiezasReparacionFecha(@Param("fecha") LocalDate fecha);
+    @Query("SELECT new com.jcaido.demorender.DTOs.almacen.MovimientoAlmacenDTO(" +
+            " p.pieza.referencia, p.pieza.nombre, SUM(p.cantidad))" +
+            " FROM PiezasReparacion AS p" +
+            " WHERE p.ordenReparacion.fechaCierre <= :fecha" +
+            " GROUP BY p.pieza.referencia, p.pieza.nombre")
+    List<MovimientoAlmacenDTO> obtenerTotalPiezasReparacionFecha(@Param("fecha") LocalDate fecha);
 
-    //@Query("SELECT new com.Tallerdecoches.DTOs.almacen.MovimientoPiezaDTO(" +
-    //        " p.ordenReparacion.fechaCierre, p.ordenReparacion.vehiculo.matricula, p.cantidad)" +
-    //        " FROM PiezasReparacion AS p" +
-    //        " WHERE p.pieza.referencia =:referencia")
-    //List<MovimientoPiezaDTO> obtenerPiezasReparacionPorPieza(@Param("referencia") String referencia);
+    @Query("SELECT new com.jcaido.demorender.DTOs.almacen.MovimientoPiezaDTO(" +
+            " p.ordenReparacion.fechaCierre, p.ordenReparacion.vehiculo.matricula, p.cantidad)" +
+            " FROM PiezasReparacion AS p" +
+            " WHERE p.pieza.referencia =:referencia")
+    List<MovimientoPiezaDTO> obtenerPiezasReparacionPorPieza(@Param("referencia") String referencia);
 }
