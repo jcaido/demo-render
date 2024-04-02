@@ -5,8 +5,10 @@ import com.jcaido.demorender.DTOs.piezasReparacion.PiezasReparacionBusquedasParc
 import com.jcaido.demorender.DTOs.piezasReparacion.PiezasReparacionCrearDTO;
 import com.jcaido.demorender.DTOs.piezasReparacion.PiezasReparacionDTO;
 import com.jcaido.demorender.exceptions.ResourceNotFoundException;
+import com.jcaido.demorender.models.OrdenReparacion;
 import com.jcaido.demorender.models.Pieza;
 import com.jcaido.demorender.models.PiezasReparacion;
+import com.jcaido.demorender.repositories.OrdenReparacionRepository;
 import com.jcaido.demorender.repositories.PiezaRepository;
 import com.jcaido.demorender.repositories.PiezasReparacionRepository;
 import jakarta.persistence.EntityManager;
@@ -22,13 +24,14 @@ import java.util.Optional;
 public class PiezasReparacionServiceImpl implements PiezasReparacionService {
 
     private final PiezasReparacionRepository piezasReparacionRepository;
-    //private final OrdenReparacionRepository ordenReparacionRepository;
+    private final OrdenReparacionRepository ordenReparacionRepository;
     private final PiezaRepository piezaRepository;
     private final ModelMapper modelMapper;
     private final EntityManager entityManager;
 
-    public PiezasReparacionServiceImpl(PiezasReparacionRepository piezasReparacionRepository, PiezaRepository piezaRepository, ModelMapper modelMapper, EntityManager entityManager) {
+    public PiezasReparacionServiceImpl(PiezasReparacionRepository piezasReparacionRepository, OrdenReparacionRepository ordenReparacionRepository, PiezaRepository piezaRepository, ModelMapper modelMapper, EntityManager entityManager) {
         this.piezasReparacionRepository = piezasReparacionRepository;
+        this.ordenReparacionRepository = ordenReparacionRepository;
         this.piezaRepository = piezaRepository;
         this.modelMapper = modelMapper;
         this.entityManager = entityManager;
@@ -73,17 +76,17 @@ public class PiezasReparacionServiceImpl implements PiezasReparacionService {
         return piezasReparacionEncontrada;
     }
 
-    //@Override
-    //public List<PiezasReparacionBusquedasParcialDTO> obtenerPiezasReparacionPorOrdenReparacion(Long id) {
-        //Optional<OrdenReparacion> ordenReparacion = ordenReparacionRepository.findById(id);
+    @Override
+    public List<PiezasReparacionBusquedasParcialDTO> obtenerPiezasReparacionPorOrdenReparacion(Long id) {
+        Optional<OrdenReparacion> ordenReparacion = ordenReparacionRepository.findById(id);
 
-        //if (!ordenReparacion.isPresent())
-        //    throw new ResourceNotFoundException("Orden de reparacion", "id", String.valueOf(id));
+        if (!ordenReparacion.isPresent())
+            throw new ResourceNotFoundException("Orden de reparacion", "id", String.valueOf(id));
 
-        //List<PiezasReparacion> piezasReparacion = ordenReparacion.get().getPiezasReparacion();
+        List<PiezasReparacion> piezasReparacion = ordenReparacion.get().getPiezasReparacion();
 
-        //return piezasReparacion.stream().map(piezaReparacion -> modelMapper.map(piezaReparacion, PiezasReparacionBusquedasParcialDTO.class)).toList();
-    //}
+        return piezasReparacion.stream().map(piezaReparacion -> modelMapper.map(piezaReparacion, PiezasReparacionBusquedasParcialDTO.class)).toList();
+    }
 
     @Override
     public List<PiezasReparacionBusquedasDTO> obtenerPiezasReparacionPorPiezaHQL(Long id_pieza) {
