@@ -66,6 +66,7 @@ com\jcaido\demorender\DTOs\propietario\PropietarioCrearDTO$PropietarioCrearDTOBu
 com\jcaido\demorender\exceptions\ResourceNotFoundException.class
 com\jcaido\demorender\models\PiezasReparacion$PiezasReparacionBuilder.class
 com\jcaido\demorender\services\ordenReparacion\OrdenReparacionService.class
+com\jcaido\demorender\models\FacturaCliente$FacturaClienteBuilder.class
 com\jcaido\demorender\services\proveedor\ProveedorService.class
 com\jcaido\demorender\DTOs\vehiculo\VehiculoBusquedasDTO.class
 com\jcaido\demorender\services\pieza\PiezaValidacionesUniqueService.class
@@ -93,6 +94,7 @@ com\jcaido\demorender\DTOs\piezasReparacion\PiezasReparacionBusquedasParcialDTO.
 com\jcaido\demorender\models\OrdenReparacion$OrdenReparacionBuilder.class
 com\jcaido\demorender\services\vehiculo\VehiculoModificacionCambiosService.class
 com\jcaido\demorender\DTOs\codigoPostal\CodigoPostalCrearDTO$CodigoPostalCrearDTOBuilder.class
+com\jcaido\demorender\models\FacturaCliente.class
 com\jcaido\demorender\controllers\UserController.class
 com\jcaido\demorender\DTOs\propietario\PropietarioCrearDTO.class
 com\jcaido\demorender\DTOs\vehiculo\VehiculoCrearDTO.class
