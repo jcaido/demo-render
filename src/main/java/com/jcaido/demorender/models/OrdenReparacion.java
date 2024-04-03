@@ -37,4 +37,6 @@ public class OrdenReparacion implements Serializable {
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     @OneToMany(mappedBy = "ordenReparacion")
     private List<PiezasReparacion> piezasReparacion = new ArrayList<>();
+    @OneToOne(mappedBy = "ordenReparacion")
+    private FacturaCliente facturaCliente;
 }

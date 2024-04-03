@@ -34,4 +34,7 @@ public class Propietario implements Serializable {
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     @OneToMany(mappedBy = "propietario")
     private List<Vehiculo> vehiculos = new ArrayList<>();
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
+    @OneToMany(mappedBy = "propietario")
+    private List<FacturaCliente> facturasClientes = new ArrayList<>();
 }
