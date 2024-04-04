@@ -13,7 +13,7 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @Getter
 @Setter
-public class FacturaClienteBusquedasDTO {
+public class FacturaClientesBusquedasDTO {
     private Long id;
     @JsonFormat(pattern = "dd-MM-yyyy")
     private LocalDate fechaFactura;
