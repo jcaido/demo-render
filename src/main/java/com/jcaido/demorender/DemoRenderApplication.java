@@ -1,6 +1,7 @@
 package com.jcaido.demorender;
 
 import com.jcaido.demorender.DTOs.codigoPostal.CodigoPostalDTO;
+import com.jcaido.demorender.DTOs.entradaPieza.EntradaPiezaDTO;
 import com.jcaido.demorender.DTOs.pieza.PiezaDTO;
 import com.jcaido.demorender.DTOs.piezasReparacion.PiezasReparacionDTO;
 import com.jcaido.demorender.DTOs.propietario.PropietarioDTO;
@@ -41,6 +42,10 @@ public class DemoRenderApplication {
 	@Bean
 	public PiezasReparacionDTO piezasReparacionDTO() {
 		return new PiezasReparacionDTO();
+	}
+	@Bean
+	public EntradaPiezaDTO entradaPiezaDTO() {
+		return new EntradaPiezaDTO();
 	}
 
 	public static void main(String[] args) {SpringApplication.run(DemoRenderApplication.class, args);}
