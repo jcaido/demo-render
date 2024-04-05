@@ -23,4 +23,6 @@ public class EntradaPieza implements Serializable {
     private Integer cantidad;
     @Column(name = "precio_entrada")
     private Double precioEntrada;
+    @OneToOne()
+    private AlbaranProveedor albaranProveedor;
 }
