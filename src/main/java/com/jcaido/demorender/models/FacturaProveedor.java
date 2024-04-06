@@ -10,29 +10,28 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Table(name = "albaran_proveedor")
+@Table(name = "factura_proveedor")
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
 @Setter
 @ToString
 @Builder
-public class AlbaranProveedor implements Serializable {
+public class FacturaProveedor implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @OneToOne()
     private Proveedor proveedor;
-    @Column(name = "fecha_albaran")
-    private LocalDate fechaAlbaran;
-    @Column(name = "numero_albaran")
-    private String numeroAlbaran;
-    private Boolean facturado = false;
+    @Column(name = "fecha_factura")
+    private LocalDate fechaFactura;
+    @Column(name = "numero_factura")
+    private String numeroFactura;
+    @Column(name = "tipo_iva")
+    private Integer tipoIVA;
+    private Boolean contabilizada = false;
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
-    @OneToMany(mappedBy = "albaranProveedor")
-    private List<EntradaPieza> entradasPiezas = new ArrayList<>();
-
-    @OneToOne()
-    private FacturaProveedor facturaProveedor;
+    @OneToMany(mappedBy = "facturaProveedor")
+    private List<AlbaranProveedor> albaranesProveedores = new ArrayList<>();
 }
