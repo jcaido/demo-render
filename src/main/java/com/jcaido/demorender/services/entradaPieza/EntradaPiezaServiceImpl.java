@@ -24,7 +24,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class EnradaPiezaServiceImpl implements EntradaPiezaService {
+public class EntradaPiezaServiceImpl implements EntradaPiezaService {
 
     private final EntradaPiezaRepository entradaPiezaRepository;
     private final ProveedorRepository proveedorRepository;
@@ -34,7 +34,7 @@ public class EnradaPiezaServiceImpl implements EntradaPiezaService {
     private final EntityManager entityManager;
     private final EntradaPiezaModificacionCambiosService entradaPiezaModificacionCambiosService;
 
-    public EnradaPiezaServiceImpl(EntradaPiezaRepository entradaPiezaRepository, ProveedorRepository proveedorRepository, PiezaRepository piezaRepository, AlbaranProveedorRepository albaranProveedorRepository, ModelMapper modelMapper, EntityManager entityManager, EntradaPiezaModificacionCambiosService entradaPiezaModificacionCambiosService) {
+    public EntradaPiezaServiceImpl(EntradaPiezaRepository entradaPiezaRepository, ProveedorRepository proveedorRepository, PiezaRepository piezaRepository, AlbaranProveedorRepository albaranProveedorRepository, ModelMapper modelMapper, EntityManager entityManager, EntradaPiezaModificacionCambiosService entradaPiezaModificacionCambiosService) {
         this.entradaPiezaRepository = entradaPiezaRepository;
         this.proveedorRepository = proveedorRepository;
         this.piezaRepository = piezaRepository;
