@@ -30,4 +30,8 @@ public class Pieza implements Serializable {
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     @OneToMany(mappedBy = "pieza")
     private List<PiezasReparacion> piezasReparacion = new ArrayList<>();
+
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
+    @OneToMany(mappedBy = "pieza")
+    private List<EntradaPieza> entradasPiezas = new ArrayList<>();
 }
