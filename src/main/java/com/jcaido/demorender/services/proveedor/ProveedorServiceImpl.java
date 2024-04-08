@@ -10,6 +10,8 @@ import com.jcaido.demorender.models.CodigoPostal;
 import com.jcaido.demorender.models.Proveedor;
 import com.jcaido.demorender.repositories.CodigoPostalRepository;
 import com.jcaido.demorender.repositories.ProveedorRepository;
+import com.jcaido.demorender.services.albaranProveedor.AlbaranProveedorService;
+import com.jcaido.demorender.services.entradaPieza.EntradaPiezaService;
 import org.modelmapper.ModelMapper;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
@@ -26,16 +28,18 @@ public class ProveedorServiceImpl implements ProveedorService {
     private final ModelMapper modelMapper;
     private final ProveedorModificacionCambiosService proveedorModificacionCambiosService;
     private final ProveedorValidacionesUniqueService proveedorValidacionesUniqueService;
+    private final EntradaPiezaService entradaPiezaService;
+    private final AlbaranProveedorService albaranProveedorService;
 
-    public ProveedorServiceImpl(ProveedorRepository proveedorRepository, CodigoPostalRepository codigoPostalRepository, ModelMapper modelMapper, ProveedorModificacionCambiosService proveedorModificacionCambiosService, ProveedorValidacionesUniqueService proveedorValidacionesUniqueService) {
+    public ProveedorServiceImpl(ProveedorRepository proveedorRepository, CodigoPostalRepository codigoPostalRepository, ModelMapper modelMapper, ProveedorModificacionCambiosService proveedorModificacionCambiosService, ProveedorValidacionesUniqueService proveedorValidacionesUniqueService, EntradaPiezaService entradaPiezaService, AlbaranProveedorService albaranProveedorService) {
         this.proveedorRepository = proveedorRepository;
         this.codigoPostalRepository = codigoPostalRepository;
         this.modelMapper = modelMapper;
         this.proveedorModificacionCambiosService = proveedorModificacionCambiosService;
         this.proveedorValidacionesUniqueService = proveedorValidacionesUniqueService;
+        this.entradaPiezaService = entradaPiezaService;
+        this.albaranProveedorService = albaranProveedorService;
     }
-    //private final EntradaPiezaService entradaPiezaService;
-    //private final AlbaranProveedorService albaranProveedorService;
 
     @Override
     public ProveedorDTO crearProveedor(ProveedorCrearDTO proveedorCrearDTO, Long idCodigoPostal) {
@@ -148,8 +152,8 @@ public class ProveedorServiceImpl implements ProveedorService {
         if (!proveedorRepository.existsById(id))
             throw new ResourceNotFoundException("Proveedor", "id", String.valueOf(id));
 
-        //if (albaranProveedorService.obtenerAlbaranesProveedorPorProveedorHQL(id).size() > 0)
-        //    throw new ResponseStatusException(HttpStatus.CONFLICT, "Existen albaranes asociados a ese proveedor");
+        if (albaranProveedorService.obtenerAlbaranesProveedorPorProveedorHQL(id).size() > 0)
+            throw new ResponseStatusException(HttpStatus.CONFLICT, "Existen albaranes asociados a ese proveedor");
 
         proveedorRepository.deleteById(id);
 
