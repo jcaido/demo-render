@@ -12,7 +12,9 @@ C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\dem
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\DTOs\proveedor\ProveedorBusquedasDTO.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\repositories\AlbaranProveedorRepository.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\services\albaranProveedor\AlbaranProveedorModificacionCambiosService.java
+C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\DTOs\facturaProveedor\FacturaProveedorDTO.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\DTOs\vehiculo\VehiculoBusquedasDTO.java
+C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\services\facturaProveedor\FacturaProveedorServiceImpl.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\DTOs\ordenReparacion\OrdenReparacionDTO.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\models\Vehiculo.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\repositories\PiezaRepository.java
@@ -22,6 +24,7 @@ C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\dem
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\DTOs\piezasReparacion\PiezasReparacionBusquedasParcialDTO.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\models\ManoDeObra.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\DTOs\facturaCliente\FacturaClienteCrearDTO.java
+C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\services\facturaProveedor\FacturaProveedorModificacionCambiosService.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\services\ordenReparacion\OrdenReparacionServiceImpl.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\models\AlbaranProveedor.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\DTOs\codigoPostal\CodigoPostalCrearDTO.java
@@ -30,6 +33,7 @@ C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\dem
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\DTOs\entradaPieza\EntradaPiezaBusquedasDTO.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\models\OrdenReparacion.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\DTOs\entradaPieza\EntradaPiezaDTO.java
+C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\DTOs\facturaProveedor\FacturaProveedorCrearDTO.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\controllers\UserController.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\DTOs\albaranProveedor\AlbaranProveedorBusquedasDTO.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\DTOs\entradaPieza\EntradaPiezaCrearDTO.java
@@ -62,12 +66,14 @@ C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\dem
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\services\propietario\PropietarioValidacionesUniqueService.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\repositories\ManoDeObraRepository.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\repositories\UserRepository.java
+C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\services\facturaProveedor\FacturaProveedorService.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\exceptions\ResourceNotFoundException.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\services\pieza\PiezaModificacionCambiosService.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\DemoRenderApplication.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\services\ordenReparacion\OrdenReparacionService.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\controllers\FacturaClienteController.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\DTOs\facturaCliente\FacturaClienteDTO.java
+C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\controllers\FacturaProveedorController.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\services\codigoPostal\CodigoPostalService.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\services\codigoPostal\CodigoPostalServiceImpl.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\services\pieza\PiezaValidacionesUniqueService.java
@@ -100,6 +106,7 @@ C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\dem
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\controllers\PiezasReparacionController.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\services\proveedor\ProveedorServiceImpl.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\DTOs\vehiculo\VehiculoDTO.java
+C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\DTOs\facturaProveedor\FacturaProveedorBusquedasDTO.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\services\codigoPostal\CodigoPostalValidacionesUniqueService.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\DTOs\vehiculo\VehiculoCrearDTO.java
 C:\Users\Usuario\Desktop\PROYECTOS JAVA\demo-render\src\main\java\com\jcaido\demorender\services\piezasReparacion\PiezasReparacionService.java

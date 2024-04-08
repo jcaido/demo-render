@@ -2,6 +2,8 @@ com\jcaido\demorender\DTOs\entradaPieza\EntradaPiezaDTO.class
 com\jcaido\demorender\DTOs\propietario\PropietarioDTO$PropietarioDTOBuilder.class
 com\jcaido\demorender\services\vehiculo\VehiculoServiceImpl.class
 com\jcaido\demorender\services\pieza\PiezaModificacionCambiosService.class
+com\jcaido\demorender\controllers\FacturaProveedorController.class
+com\jcaido\demorender\services\facturaProveedor\FacturaProveedorService.class
 com\jcaido\demorender\models\Pieza.class
 com\jcaido\demorender\services\facturaCliente\FacturaClienteServiceImpl.class
 com\jcaido\demorender\repositories\OrdenReparacionRepository.class
@@ -36,6 +38,7 @@ com\jcaido\demorender\repositories\AlbaranProveedorRepository.class
 com\jcaido\demorender\DTOs\almacen\MovimientoAlmacenDTO$Movimiento.class
 com\jcaido\demorender\models\Propietario$PropietarioBuilder.class
 com\jcaido\demorender\DTOs\facturaCliente\FacturaClientesBusquedasDTO.class
+com\jcaido\demorender\services\facturaProveedor\FacturaProveedorServiceImpl.class
 com\jcaido\demorender\DTOs\ordenReparacion\OrdenReparacionReducidaDTO.class
 com\jcaido\demorender\exceptions\ErrorDetails.class
 com\jcaido\demorender\services\facturaCliente\FacturaClienteService.class
@@ -112,6 +115,7 @@ com\jcaido\demorender\services\piezasReparacion\PiezasReparacionService.class
 com\jcaido\demorender\models\ManoDeObra$ManoDeObraBuilder.class
 com\jcaido\demorender\controllers\OrdenReparacionController.class
 com\jcaido\demorender\DTOs\albaranProveedor\AlbaranProveedorCrearDTO.class
+com\jcaido\demorender\DTOs\facturaProveedor\FacturaProveedorDTO.class
 com\jcaido\demorender\services\vehiculo\VehiculoValidacionesUniqueService.class
 com\jcaido\demorender\models\OrdenReparacion.class
 com\jcaido\demorender\DTOs\vehiculo\VehiculoDTO.class
@@ -119,12 +123,14 @@ com\jcaido\demorender\services\ordenReparacion\OrdenReparacionServiceImpl.class
 com\jcaido\demorender\services\manoDeObra\ManoDeObraServiceImpl.class
 com\jcaido\demorender\DTOs\manoDeObra\ManoDeObraCrearDTO.class
 com\jcaido\demorender\services\albaranProveedor\AlbaranProveedorService.class
+com\jcaido\demorender\DTOs\facturaProveedor\FacturaProveedorBusquedasDTO.class
 com\jcaido\demorender\DTOs\piezasReparacion\PiezasReparacionBusquedasParcialDTO.class
 com\jcaido\demorender\services\albaranProveedor\AlbaranProveedorServiceImpl.class
 com\jcaido\demorender\models\FacturaProveedor$FacturaProveedorBuilder.class
 com\jcaido\demorender\models\OrdenReparacion$OrdenReparacionBuilder.class
 com\jcaido\demorender\services\vehiculo\VehiculoModificacionCambiosService.class
 com\jcaido\demorender\DTOs\codigoPostal\CodigoPostalCrearDTO$CodigoPostalCrearDTOBuilder.class
+com\jcaido\demorender\DTOs\facturaProveedor\FacturaProveedorCrearDTO.class
 com\jcaido\demorender\models\FacturaCliente.class
 com\jcaido\demorender\repositories\EntradaPiezaRepository.class
 com\jcaido\demorender\controllers\UserController.class
@@ -137,6 +143,7 @@ com\jcaido\demorender\DTOs\ordenReparacion\OrdenReparacionBusquedasDTO.class
 com\jcaido\demorender\DTOs\piezasReparacion\PiezasReparacionCrearDTO.class
 com\jcaido\demorender\DTOs\propietario\PropietarioDTO.class
 com\jcaido\demorender\repositories\ProveedorRepository.class
+com\jcaido\demorender\services\facturaProveedor\FacturaProveedorModificacionCambiosService.class
 com\jcaido\demorender\services\proveedor\ProveedorModificacionCambiosService.class
 com\jcaido\demorender\services\propietario\PropietarioServiceImpl.class
 com\jcaido\demorender\models\AlbaranProveedor.class
