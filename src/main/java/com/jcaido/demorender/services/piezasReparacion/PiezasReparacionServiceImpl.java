@@ -40,16 +40,16 @@ public class PiezasReparacionServiceImpl implements PiezasReparacionService {
     @Override
     public PiezasReparacionDTO crearPiezasReparacion(PiezasReparacionCrearDTO piezasReparacionCrearDTO, Long id_ordenReparacion, Long id_pieza) {
 
-        //if (!ordenReparacionRepository.existsById(id_ordenReparacion))
-        //    throw new ResourceNotFoundException("orden de reparación", "id", String.valueOf(id_ordenReparacion));
+        if (!ordenReparacionRepository.existsById(id_ordenReparacion))
+            throw new ResourceNotFoundException("orden de reparación", "id", String.valueOf(id_ordenReparacion));
 
         if (!piezaRepository.existsById(id_pieza))
             throw new ResourceNotFoundException("pieza", "id", String.valueOf(id_ordenReparacion));
 
         PiezasReparacion piezasReparacion = modelMapper.map(piezasReparacionCrearDTO, PiezasReparacion.class);
-        //OrdenReparacion ordenReparacion = ordenReparacionRepository.findById(id_ordenReparacion).get();
+        OrdenReparacion ordenReparacion = ordenReparacionRepository.findById(id_ordenReparacion).get();
         Pieza pieza = piezaRepository.findById(id_pieza).get();
-        //piezasReparacion.setOrdenReparacion(ordenReparacion);
+        piezasReparacion.setOrdenReparacion(ordenReparacion);
         piezasReparacion.setPieza(pieza);
         piezasReparacionRepository.save(piezasReparacion);
         PiezasReparacionDTO piezasReparacionRespuesta = modelMapper.map(piezasReparacion, PiezasReparacionDTO.class);
