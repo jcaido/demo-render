@@ -112,22 +112,22 @@ public class PiezasReparacionController {
     }
 
 
-    //@Operation(summary = "Obtener piezas imputadas a una orden de reparación", description = "Obtener piezas imputadas a una orden de reparación")
-    //@ApiResponses(value = {
-    //        @ApiResponse(responseCode = "200", description = "Piezas imputadas obtenidas correctamente",
-    //                content = {
-    //                        @Content(mediaType = "application/json",
-    //                                schema = @Schema(implementation = PiezasReparacionBusquedasParcialDTO.class))
-    //                }),
-    //        @ApiResponse(responseCode = "404", description = "id de la orden de reparacion no se encuentra",
-    //                content = @Content)
-    //})
-    //@GetMapping("/orden-reparacion/{id}")
-    //public List<PiezasReparacionBusquedasParcialDTO> obtenerPiezasReparacionPorOrdenReparacion(@Parameter(description = "id de la orden de reparación",
-    //        required = true) @PathVariable Long id) {
+    @Operation(summary = "Obtener piezas imputadas a una orden de reparación", description = "Obtener piezas imputadas a una orden de reparación")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200", description = "Piezas imputadas obtenidas correctamente",
+                    content = {
+                            @Content(mediaType = "application/json",
+                                    schema = @Schema(implementation = PiezasReparacionBusquedasParcialDTO.class))
+                    }),
+            @ApiResponse(responseCode = "404", description = "id de la orden de reparacion no se encuentra",
+                    content = @Content)
+    })
+    @GetMapping("/orden-reparacion/{id}")
+    public List<PiezasReparacionBusquedasParcialDTO> obtenerPiezasReparacionPorOrdenReparacion(@Parameter(description = "id de la orden de reparación",
+            required = true) @PathVariable Long id) {
 
-    //    return piezasReparacionService.obtenerPiezasReparacionPorOrdenReparacion(id);
-    //}
+        return piezasReparacionService.obtenerPiezasReparacionPorOrdenReparacion(id);
+    }
 
 
     @Operation(summary = "Obtener Piezas imputadas por pieza", description = "Obtener Piezas imputadas por pieza")
