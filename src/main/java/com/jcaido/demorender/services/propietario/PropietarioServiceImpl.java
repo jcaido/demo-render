@@ -10,6 +10,7 @@ import com.jcaido.demorender.models.CodigoPostal;
 import com.jcaido.demorender.models.Propietario;
 import com.jcaido.demorender.repositories.CodigoPostalRepository;
 import com.jcaido.demorender.repositories.PropietarioRepository;
+import com.jcaido.demorender.services.vehiculo.VehiculoService;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.Query;
 import org.modelmapper.ModelMapper;
@@ -25,14 +26,16 @@ public class PropietarioServiceImpl implements PropietarioService {
 
     private final PropietarioRepository propietarioRepository;
     private final CodigoPostalRepository codigoPostalRepository;
+    private final VehiculoService vehiculoService;
     private final ModelMapper modelMapper;
     private final EntityManager entityManager;
     private final PropietarioValidacionesUniqueService propietarioValidacionesUniqueService;
     private final PropietarioModificacionCambiosService propietarioModificacionCambiosService;
 
-    public PropietarioServiceImpl(PropietarioRepository propietarioRepository, CodigoPostalRepository codigoPostalRepository, ModelMapper modelMapper, EntityManager entityManager, PropietarioValidacionesUniqueService propietarioValidacionesUniqueService, PropietarioModificacionCambiosService propietarioModificacionCambiosService) {
+    public PropietarioServiceImpl(PropietarioRepository propietarioRepository, CodigoPostalRepository codigoPostalRepository, VehiculoService vehiculoService, ModelMapper modelMapper, EntityManager entityManager, PropietarioValidacionesUniqueService propietarioValidacionesUniqueService, PropietarioModificacionCambiosService propietarioModificacionCambiosService) {
         this.propietarioRepository = propietarioRepository;
         this.codigoPostalRepository = codigoPostalRepository;
+        this.vehiculoService = vehiculoService;
         this.modelMapper = modelMapper;
         this.entityManager = entityManager;
         this.propietarioValidacionesUniqueService = propietarioValidacionesUniqueService;
@@ -151,8 +154,8 @@ public class PropietarioServiceImpl implements PropietarioService {
         if (!propietarioRepository.existsById(id))
             throw new ResourceNotFoundException("Propietario", "id", String.valueOf(id));
 
-        //if (vehiculoService.obtenerVehiculosPorPropietarioHQL(id).size() > 0)
-        //    throw new ResponseStatusException(HttpStatus.CONFLICT, "Existen vehiculos relacionado con ese propietario");
+        if (vehiculoService.obtenerVehiculosPorPropietarioHQL(id).size() > 0)
+            throw new ResponseStatusException(HttpStatus.CONFLICT, "Existen vehiculos relacionado con ese propietario");
 
         propietarioRepository.deleteById(id);
 
