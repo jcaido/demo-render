@@ -47,14 +47,12 @@ public class OrdenReparacionServiceImpl implements OrdenReparacionService {
     }
 
     @Override
-    public OrdenReparacionDTO crearOrdenReparacion(OrdenReparacionDTO ordenReparacionDTO, Long idVehiculo) {
-        if (ordenReparacionDTO.getId() != null)
-            throw new BadRequestCreacionException("Orden de reparacion", "id");
+    public OrdenReparacionDTO crearOrdenReparacion(OrdenReparacionCrearDTO ordenReparacionCrearDTO, Long idVehiculo) {
 
         if (!ordenReparacionModificacionCambiosService.validacionVehiculo(idVehiculo))
             throw new ResponseStatusException(HttpStatus.CONFLICT, "El vehiculo asociado a la orden de reparacion no existe");
 
-        OrdenReparacion ordenReparacion = modelMapper.map(ordenReparacionDTO, OrdenReparacion.class);
+        OrdenReparacion ordenReparacion = modelMapper.map(ordenReparacionCrearDTO, OrdenReparacion.class);
         Vehiculo vehiculo = vehiculoRepository.findById(idVehiculo).get();
         ordenReparacion.setVehiculo(vehiculo);
         ordenReparacionRepository.save(ordenReparacion);

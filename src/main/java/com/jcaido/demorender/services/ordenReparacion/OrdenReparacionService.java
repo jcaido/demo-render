@@ -7,7 +7,7 @@ import java.util.List;
 
 public interface OrdenReparacionService {
 
-    OrdenReparacionDTO crearOrdenReparacion(OrdenReparacionDTO ordenReparacionDTO, Long idVehiculo);
+    OrdenReparacionDTO crearOrdenReparacion(OrdenReparacionCrearDTO ordenReparacionCrearDTO, Long idVehiculo);
     List<OrdenReparacionBusquedasDTO> findAll();
     OrdenReparacionBusquedasDTO findById(Long id);
     OrdenReparacionBusquedasParcialDTO findByIdParcial(Long id);

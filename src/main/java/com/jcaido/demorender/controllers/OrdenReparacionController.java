@@ -28,12 +28,13 @@ public class OrdenReparacionController {
         this.ordenReparacionService = ordenReparacionService;
     }
 
-    @Operation(summary = "Crear una nueva orden de reparación", description = "Crear una nueva orden de reparación")
+    @Operation(summary = "Crear una nueva orden de reparación", description = "Crear una nueva orden de reparación" +
+            "formato de fecha: dd-mm-aaaa, cerrada = false, facturada = false")
     @ApiResponses(value = {
-            @ApiResponse(responseCode = "201", description = "oreden de reparación creada correctamente",
+            @ApiResponse(responseCode = "201", description = "orden de reparación creada correctamente",
                     content = {
                             @Content(mediaType = "application/json",
-                                    schema = @Schema(implementation = OrdenReparacionDTO.class))
+                                    schema = @Schema(implementation = OrdenReparacionCrearDTO.class))
                     }),
             @ApiResponse(responseCode = "400",
                     description = "BAD REQUEST",
@@ -43,10 +44,10 @@ public class OrdenReparacionController {
                     content = @Content),
     })
     @PostMapping("/{idVehiculo}")
-    public ResponseEntity<OrdenReparacionDTO> crearOrdenesReparacion(@Valid @RequestBody OrdenReparacionDTO ordenReparacionDTO,
+    public ResponseEntity<OrdenReparacionDTO> crearOrdenesReparacion(@Valid @RequestBody OrdenReparacionCrearDTO ordenReparacionCrearDTO,
                                                                      @Parameter(description = "id del vehículo", required = true) @PathVariable Long idVehiculo) {
 
-        return new ResponseEntity<>(ordenReparacionService.crearOrdenReparacion(ordenReparacionDTO, idVehiculo), HttpStatus.CREATED);
+        return new ResponseEntity<>(ordenReparacionService.crearOrdenReparacion(ordenReparacionCrearDTO, idVehiculo), HttpStatus.CREATED);
     }
 
     @Operation(summary = "Obtener una orden de reparación por su id", description = "Obtener una orden de reparación por su id")
