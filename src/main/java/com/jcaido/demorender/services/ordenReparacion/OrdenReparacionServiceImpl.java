@@ -277,11 +277,14 @@ public class OrdenReparacionServiceImpl implements OrdenReparacionService {
     public String deleteById(Long id) {
         Optional<OrdenReparacion> ordenReparacion = ordenReparacionRepository.findById(id);
 
+        if (!ordenReparacion.isPresent())
+            throw new ResourceNotFoundException("Orden de reparacion", "id", String.valueOf(id));
+
         if (ordenReparacion.get().getCerrada())
             throw new ResponseStatusException(HttpStatus.CONFLICT, "La orden de reparacion esta cerrada");
 
-        if (piezasReparacionService.obtenerPiezasReparacionPorOrdenReparacion(id).size() > 0)
-            throw new ResponseStatusException(HttpStatus.CONFLICT, "Existen piezas relacionadas con esa orden de reparacion");
+        //if (piezasReparacionService.obtenerPiezasReparacionPorOrdenReparacion(id).size() > 0)
+        //    throw new ResponseStatusException(HttpStatus.CONFLICT, "Existen piezas relacionadas con esa orden de reparacion");
 
         ordenReparacionRepository.deleteById(id);
         String respuesta = "Orden de reparacion eliminada con exito";

@@ -310,7 +310,8 @@ public class OrdenReparacionController {
         return ordenReparacionService.obtenerOrdenesReparacionCerradasPtesFacturar();
     }
 
-    @Operation(summary = "Modificar una orden de reparación", description = "Modificar una orden de reparación")
+    @Operation(summary = "Modificar una orden de reparación", description = "Modificar una orden de reparación, " +
+            "formato de fecha: dd-mm-aaaa")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "Orden de reparación modificada correctamente",
                     content = {
