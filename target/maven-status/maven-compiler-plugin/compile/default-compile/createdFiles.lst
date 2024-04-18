@@ -136,6 +136,7 @@ com\jcaido\demorender\DTOs\vehiculo\VehiculoCrearDTO.class
 com\jcaido\demorender\DTOs\almacen\MovimientoPiezaDTO.class
 com\jcaido\demorender\DTOs\facturaCliente\FacturaClienteDTO.class
 com\jcaido\demorender\controllers\ManoDeObraController.class
+com\jcaido\demorender\DTOs\ordenReparacion\OrdenReparacionCrearDTO.class
 com\jcaido\demorender\DTOs\ordenReparacion\OrdenReparacionBusquedasDTO.class
 com\jcaido\demorender\DTOs\piezasReparacion\PiezasReparacionCrearDTO.class
 com\jcaido\demorender\DTOs\propietario\PropietarioDTO.class
