@@ -31,4 +31,5 @@ public class OrdenReparacionBusquedasDTO {
     private Boolean facturada;
     private Vehiculo vehiculo;
     private ManoDeObra manoDeObra;
+    private List<PiezasReparacionBusquedasParcialDTO> piezasReparacion;
 }
