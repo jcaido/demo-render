@@ -105,7 +105,7 @@ public class PiezasReparacionController {
                     content = @Content)
     })
     @GetMapping("/{id}")
-    public ResponseEntity<PiezasReparacionBusquedasDTO> obtenerPiezaReparacionPorId(@Parameter(description = "id de la imputación de pieza a buscar",
+    public ResponseEntity<PiezasReparacionBusquedasParcialDTO> obtenerPiezaReparacionPorId(@Parameter(description = "id de la imputación de pieza a buscar",
             required = true) @PathVariable Long id) {
 
         return new ResponseEntity<>(piezasReparacionService.findById(id), HttpStatus.OK);

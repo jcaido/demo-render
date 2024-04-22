@@ -65,13 +65,13 @@ public class PiezasReparacionServiceImpl implements PiezasReparacionService {
     }
 
     @Override
-    public PiezasReparacionBusquedasDTO findById(Long id) {
+    public PiezasReparacionBusquedasParcialDTO findById(Long id) {
         Optional<PiezasReparacion> piezaReparacion = piezasReparacionRepository.findById(id);
 
         if (!piezaReparacion.isPresent())
             throw new ResourceNotFoundException("Pieza-reparacion", "id", String.valueOf(id));
 
-        PiezasReparacionBusquedasDTO piezasReparacionEncontrada = modelMapper.map(piezaReparacion, PiezasReparacionBusquedasDTO.class);
+        PiezasReparacionBusquedasParcialDTO piezasReparacionEncontrada = modelMapper.map(piezaReparacion, PiezasReparacionBusquedasParcialDTO.class);
 
         return piezasReparacionEncontrada;
     }
