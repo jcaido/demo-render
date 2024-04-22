@@ -89,12 +89,12 @@ public class PiezasReparacionServiceImpl implements PiezasReparacionService {
     }
 
     @Override
-    public List<PiezasReparacionBusquedasDTO> obtenerPiezasReparacionPorPiezaHQL(Long id_pieza) {
+    public List<PiezasReparacionBusquedasParcialDTO> obtenerPiezasReparacionPorPiezaHQL(Long id_pieza) {
         Query query = entityManager.createQuery("FROM PiezasReparacion p WHERE p.pieza.id = :id" );
         query.setParameter("id", id_pieza);
         List<PiezasReparacion> piezas = query.getResultList();
 
-        return piezas.stream().map(pieza-> modelMapper.map(pieza, PiezasReparacionBusquedasDTO.class)).toList();
+        return piezas.stream().map(pieza-> modelMapper.map(pieza, PiezasReparacionBusquedasParcialDTO.class)).toList();
     }
 
     @Override

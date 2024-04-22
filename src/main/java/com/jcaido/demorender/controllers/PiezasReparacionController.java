@@ -84,7 +84,7 @@ public class PiezasReparacionController {
             @ApiResponse(responseCode = "200", description = "Piezas imputadas obtenidas correctamente",
                     content = {
                             @Content(mediaType = "application/json",
-                                    schema = @Schema(implementation = PiezasReparacionBusquedasDTO.class))
+                                    schema = @Schema(implementation = PiezasReparacionBusquedasParcialDTO.class))
                     })
     })
     @GetMapping()
@@ -99,7 +99,7 @@ public class PiezasReparacionController {
             @ApiResponse(responseCode = "200", description = "Imputacion de pieza obtenida correctamente",
                     content = {
                             @Content(mediaType = "application/json",
-                                    schema = @Schema(implementation = PiezasReparacionBusquedasDTO.class))
+                                    schema = @Schema(implementation = PiezasReparacionBusquedasParcialDTO.class))
                     }),
             @ApiResponse(responseCode = "404", description = "imputacion de pieza no encontrada",
                     content = @Content)
@@ -135,11 +135,11 @@ public class PiezasReparacionController {
             @ApiResponse(responseCode = "200", description = "Imputaciones de piezas obtenidas correctamente",
                     content = {
                             @Content(mediaType = "application/json",
-                                    schema = @Schema(implementation = PiezasReparacionBusquedasDTO.class))
+                                    schema = @Schema(implementation = PiezasReparacionBusquedasParcialDTO.class))
                     })
     })
     @GetMapping("/pieza/{id_pieza}")
-    public List<PiezasReparacionBusquedasDTO> obtenerPiezasReparacionPorPieza(@Parameter(description = "id de la pieza",
+    public List<PiezasReparacionBusquedasParcialDTO> obtenerPiezasReparacionPorPieza(@Parameter(description = "id de la pieza",
             required = true) @PathVariable Long id_pieza) {
 
         return piezasReparacionService.obtenerPiezasReparacionPorPiezaHQL(id_pieza);
