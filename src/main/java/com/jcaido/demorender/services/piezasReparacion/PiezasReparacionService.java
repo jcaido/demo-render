@@ -11,7 +11,7 @@ import java.util.List;
 public interface PiezasReparacionService {
 
     PiezasReparacionDTO crearPiezasReparacion(PiezasReparacionCrearDTO piezasReparacionCrearDTO, Long id_ordenReparacion, Long id_pieza);
-    List<PiezasReparacionBusquedasDTO> findAll();
+    List<PiezasReparacionBusquedasParcialDTO> findAll();
     PiezasReparacionBusquedasDTO findById(Long id);
     List<PiezasReparacionBusquedasParcialDTO> obtenerPiezasReparacionPorOrdenReparacion(Long id);
     List<PiezasReparacionBusquedasDTO> obtenerPiezasReparacionPorPiezaHQL(Long id_pieza);

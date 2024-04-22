@@ -88,7 +88,7 @@ public class PiezasReparacionController {
                     })
     })
     @GetMapping()
-    public List<PiezasReparacionBusquedasDTO> obtenerTodasLasPiezasReparacion() {
+    public List<PiezasReparacionBusquedasParcialDTO> obtenerTodasLasPiezasReparacion() {
 
         return piezasReparacionService.findAll();
     }

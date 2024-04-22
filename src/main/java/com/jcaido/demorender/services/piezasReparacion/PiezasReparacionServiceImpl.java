@@ -58,10 +58,10 @@ public class PiezasReparacionServiceImpl implements PiezasReparacionService {
     }
 
     @Override
-    public List<PiezasReparacionBusquedasDTO> findAll() {
+    public List<PiezasReparacionBusquedasParcialDTO> findAll() {
         List<PiezasReparacion> piezasReparacion = piezasReparacionRepository.findAll();
 
-        return  piezasReparacion.stream().map(piezaReparacion-> modelMapper.map(piezaReparacion, PiezasReparacionBusquedasDTO.class)).toList();
+        return  piezasReparacion.stream().map(piezaReparacion-> modelMapper.map(piezaReparacion, PiezasReparacionBusquedasParcialDTO.class)).toList();
     }
 
     @Override
