@@ -30,7 +30,7 @@ public class AlbaranProveedor implements Serializable {
     private String numeroAlbaran;
     private Boolean facturado = false;
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
-    @OneToMany(mappedBy = "albaranProveedor")
+    @OneToMany(fetch = FetchType.EAGER, mappedBy = "albaranProveedor")
     private List<EntradaPieza> entradasPiezas = new ArrayList<>();
 
     @OneToOne()
