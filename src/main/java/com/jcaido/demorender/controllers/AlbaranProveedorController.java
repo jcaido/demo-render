@@ -132,7 +132,8 @@ public class AlbaranProveedorController {
     }
 
 
-    @Operation(summary = "Modificar un albarán de proveedor", description = "Modificar un albarán de proveedor")
+    @Operation(summary = "Modificar un albarán de proveedor", description = "Modificar un albarán de proveedor, " +
+            " formato de fecha dd-mm-aaaa")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "Albarán de proveedor modificado correctamente",
                     content = {
