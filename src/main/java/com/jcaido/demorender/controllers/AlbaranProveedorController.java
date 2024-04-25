@@ -29,7 +29,8 @@ public class AlbaranProveedorController {
         this.albaranProveedorService = albaranProveedorService;
     }
 
-    @Operation(summary = "Crear un nuevo albarán de proveedor", description = "Crear un nuevo albarán de proveedor")
+    @Operation(summary = "Crear un nuevo albarán de proveedor", description = "Crear un nuevo albarán de proveedor, " +
+            " formato de fecha dd-mm-aaaa")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "201", description = "albarán de proveedor creado correctamente",
                     content = {
