@@ -41,7 +41,8 @@ public class AlmacenController {
     }
 
 
-    @Operation(summary = "Obtener el inventario de almacén a una fecha determinada", description = "Obtener el inventario de almacén a una fecha determinada")
+    @Operation(summary = "Obtener el inventario de almacén a una fecha determinada", description = "Obtener el inventario de almacén a una fecha determinada" +
+            " formato fecha aaaa-mm-dd")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "Inventario de almacén obtenido correctamente",
                     content = {
