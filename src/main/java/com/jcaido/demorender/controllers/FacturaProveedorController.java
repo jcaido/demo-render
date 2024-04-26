@@ -30,7 +30,8 @@ public class FacturaProveedorController {
         this.facturaProveedorService = facturaProveedorService;
     }
 
-    @Operation(summary = "Crear una nueva factura de proveedor", description = "Crear una nueva factura de proveedor")
+    @Operation(summary = "Crear una nueva factura de proveedor", description = "Crear una nueva factura de proveedor," +
+            " formato de feha dd-mm-aaaa")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "201", description = "factura de proveedor creada correctamente",
                     content = {
