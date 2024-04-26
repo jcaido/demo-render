@@ -32,6 +32,6 @@ public class FacturaProveedor implements Serializable {
     private Integer tipoIVA;
     private Boolean contabilizada = false;
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
-    @OneToMany(mappedBy = "facturaProveedor")
+    @OneToMany(fetch = FetchType.EAGER, mappedBy = "facturaProveedor")
     private List<AlbaranProveedor> albaranesProveedores = new ArrayList<>();
 }
